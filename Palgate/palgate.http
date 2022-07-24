@@ -1,0 +1,273 @@
+GET https://api1.pal-es.com/v1/bt/un/ts HTTP/2.0
+accept-encoding: gzip
+user-agent: okhttp/5.0.0-alpha.2
+
+###
+HTTP/2.0 200
+date: Sun, 17 Jul 2022 17:20:32 GMT
+content-type: application/json; charset=utf-8
+content-length: 53
+access-control-allow-origin: *
+access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, X-Access-Token, x-bt-app-token, x-bt-user-token, X-Key, x-device-token, x-device-id
+access-control-max-age: 600
+strict-transport-security: max-age=15724800; includeSubDomains
+
+{"err":null,"msg":"ok","status":"ok","ts":1658078433}
+
+###
+GET https://api1.pal-es.com/v1/bt/un/ts HTTP/2.0
+accept-encoding: gzip
+user-agent: okhttp/5.0.0-alpha.2
+
+###
+HTTP/2.0 200
+date: Sun, 17 Jul 2022 17:20:41 GMT
+content-type: application/json; charset=utf-8
+content-length: 53
+access-control-allow-origin: *
+access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, X-Access-Token, x-bt-app-token, x-bt-user-token, X-Key, x-device-token, x-device-id
+access-control-max-age: 600
+strict-transport-security: max-age=15724800; includeSubDomains
+
+{"err":null,"msg":"ok","status":"ok","ts":1658078441}
+
+###
+POST https://api1.pal-es.com/v1/bt/un/k11 HTTP/2.0
+content-type: application/json; charset=UTF-8
+content-length: 89
+accept-encoding: gzip
+user-agent: okhttp/5.0.0-alpha.2
+
+{"s":"78a28306-a461-4910-9c80-18a9db7ae810","v":1,"k":"8AFA492013E37BB95A144F601D5096A0"}
+
+
+###
+HTTP/2.0 200
+date: Sun, 17 Jul 2022 17:20:41 GMT
+content-type: application/json; charset=utf-8
+content-length: 65
+access-control-allow-origin: *
+access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, X-Access-Token, x-bt-app-token, x-bt-user-token, X-Key, x-device-token, x-device-id
+access-control-max-age: 600
+strict-transport-security: max-age=15724800; includeSubDomains
+
+{"err":null,"status":"ok","k":"90160C5CCBC8C3A6BAD375F19ED222D9"}
+
+###
+POST https://api1.pal-es.com/v1/bt/un/verify/start/+79164553909?countryCode=ru&os=android HTTP/2.0
+content-type: application/json; charset=UTF-8
+content-length: 102
+accept-encoding: gzip
+user-agent: okhttp/5.0.0-alpha.2
+
+{"s":"78a28306-a461-4910-9c80-18a9db7ae810","v":1,"k":"05F8FD65C38D7631217E3018D88112F1","type":"sms"}
+
+###
+HTTP/2.0 200
+date: Sun, 17 Jul 2022 17:20:42 GMT
+content-type: application/json; charset=utf-8
+content-length: 120
+access-control-allow-origin: *
+access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, X-Access-Token, x-bt-app-token, x-bt-user-token, X-Key, x-device-token, x-device-id
+access-control-max-age: 600
+strict-transport-security: max-age=15724800; includeSubDomains
+
+{"err":null,"msg":"Message sent to 79164553909","status":"ok","pn":"79164553909","k":"6A82FCD87EF5E19C9B8C0E85A06B093B"}
+
+###
+POST https://api1.pal-es.com/v1/bt/un/verify/code/79164553909?countryCode=ru HTTP/2.0
+content-type: application/json; charset=UTF-8
+content-length: 104
+accept-encoding: gzip
+user-agent: okhttp/5.0.0-alpha.2
+
+{"code":"82294","s":"78a28306-a461-4910-9c80-18a9db7ae810","v":1,"k":"27EF75BFD6DEA4A80E0016200FF554DF"}
+
+###
+HTTP/2.0 200
+date: Sun, 17 Jul 2022 17:21:02 GMT
+content-type: application/json; charset=utf-8
+content-length: 220
+access-control-allow-origin: *
+access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, X-Access-Token, x-bt-app-token, x-bt-user-token, X-Key, x-device-token, x-device-id
+access-control-max-age: 600
+strict-transport-security: max-age=15724800; includeSubDomains
+
+{"err":null,"msg":"user verified, existing user","status":"ok","user":{"id":"79164553909","token":"a1dd91159229943948440f915348e3e3","address":"","firstname":"Рекунов","lastname":"","image":true,"userexist":true}}
+
+###
+PUT https://api1.pal-es.com/v1/bt/user HTTP/2.0
+x-bt-token: 0100126E933AB55E37AB3FA7E67E2CC918561AF50ACD36
+content-type: application/json; charset=UTF-8
+content-length: 71
+accept-encoding: gzip
+user-agent: okhttp/5.0.0-alpha.2
+
+{"firstname":"Рекунов","address":"","language":"","lastname":""}
+
+###
+HTTP/2.0 200
+date: Sun, 17 Jul 2022 17:21:04 GMT
+content-type: application/json; charset=utf-8
+content-length: 55
+access-control-allow-origin: *
+access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, X-Access-Token, x-bt-app-token, x-bt-user-token, X-Key, x-device-token, x-device-id
+access-control-max-age: 600
+strict-transport-security: max-age=15724800; includeSubDomains
+
+{"err":null,"msg":"user details updated","status":"ok"}
+
+###
+PUT https://api1.pal-es.com/v1/bt/user HTTP/2.0
+x-bt-token: 0100126E933AB5BB60EC5F8C66F6397AAAECCD7386BD4D
+content-type: application/json; charset=UTF-8
+content-length: 27
+accept-encoding: gzip
+user-agent: okhttp/5.0.0-alpha.2
+
+{"filterType":"listFilter"}
+
+###
+GET https://api1.pal-es.com/v1/bt/user/check-token HTTP/2.0
+x-bt-token: 0100126E933AB59D01F69437AE051334F5897E78E0FA7F
+accept-encoding: gzip
+user-agent: okhttp/5.0.0-alpha.2
+
+
+###
+GET https://api1.pal-es.com/v1/bt/devices HTTP/2.0
+x-bt-token: 0100126E933AB5C3A8C6D3CB9E8E49995420459CAC1A64
+accept-encoding: gzip
+user-agent: okhttp/5.0.0-alpha.2
+
+
+###
+PUT https://api1.pal-es.com/v1/bt/user HTTP/2.0
+x-bt-token: 0100126E933AB52B21A773E57C413970D5923478EF9E65
+content-type: application/json; charset=UTF-8
+content-length: 184
+accept-encoding: gzip
+user-agent: okhttp/5.0.0-alpha.2
+
+{"googleAppToken":"cz9FC1lrSn-dqq0GaaFGmf:APA91bHnDAOHD_yhDIFHoI-LcPsVGSjfoJnRUCHRG_sWsBMtRCnHi2Nd3kW9bUID8p-3jtjxaWRAada1r25fShda6UfwzbuvNi_76E6pPBIlgn6HCUxMCXRcrt_VMvuBENizgIXlMPKe"}
+
+###
+HTTP/2.0 200
+date: Sun, 17 Jul 2022 17:21:07 GMT
+content-type: application/json; charset=utf-8
+content-length: 62
+access-control-allow-origin: *
+access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, X-Access-Token, x-bt-app-token, x-bt-user-token, X-Key, x-device-token, x-device-id
+access-control-max-age: 600
+strict-transport-security: max-age=15724800; includeSubDomains
+
+{"err":null,"msg":"token valid","status":"ok","ts":1658078467}
+
+###
+HTTP/2.0 200
+date: Sun, 17 Jul 2022 17:21:07 GMT
+content-type: application/json; charset=utf-8
+content-length: 722
+access-control-allow-origin: *
+access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, X-Access-Token, x-bt-app-token, x-bt-user-token, X-Key, x-device-token, x-device-id
+access-control-max-age: 600
+strict-transport-security: max-age=15724800; includeSubDomains
+
+{"err":null,"msg":"all my devices","status":"ok","devices":[{"_id":"3G400101263","subType":"A-WR","model":"SG303GA-WR","outputs":1,"type":"3G","address":"Ulitsa Krymskaya, 4, Ramenskoye, Moskovskaya oblast', Russia, 140103","image1":false,"name":"Гск Форум","name1":"Шлагбаум","output1Disabled":false,"output1LatchStatus":false,"relay1":"02","id":"3G400101263","admin":false,"output1":true,"adminRulesDisable":[],"notes":null,"startDate":"2000-01-01T00:00:00.000Z","endDate":"2099-01-01T00:00:00.000Z","dialToOpen":true,"firstname":"","lastname":"Рекунов","output1Latch":false,"output2Latch":false,"output1LatchMaxTime":0,"output2LatchMaxTime":0,"notifications":true,"googleAssistantActive":false}]}
+
+###
+HTTP/2.0 200
+date: Sun, 17 Jul 2022 17:21:07 GMT
+content-type: application/json; charset=utf-8
+content-length: 55
+access-control-allow-origin: *
+access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, X-Access-Token, x-bt-app-token, x-bt-user-token, X-Key, x-device-token, x-device-id
+access-control-max-age: 600
+strict-transport-security: max-age=15724800; includeSubDomains
+
+{"err":null,"msg":"user details updated","status":"ok"}
+
+###
+HTTP/2.0 200
+date: Sun, 17 Jul 2022 17:21:07 GMT
+content-type: application/json; charset=utf-8
+content-length: 55
+access-control-allow-origin: *
+access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, X-Access-Token, x-bt-app-token, x-bt-user-token, X-Key, x-device-token, x-device-id
+access-control-max-age: 600
+strict-transport-security: max-age=15724800; includeSubDomains
+
+{"err":null,"msg":"user details updated","status":"ok"}
+
+###
+GET https://api1.pal-es.com/v1/bt/device/3G400101263/open-gate?outputNum=1 HTTP/2.0
+x-bt-token: 0100126E933AB5D5924D9905FECFDA8CDF8961FCA9A9B0
+accept-encoding: gzip
+user-agent: okhttp/5.0.0-alpha.2
+
+###
+HTTP/2.0 200
+date: Sun, 17 Jul 2022 17:21:10 GMT
+content-type: application/json; charset=utf-8
+content-length: 69
+access-control-allow-origin: *
+access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, X-Access-Token, x-bt-app-token, x-bt-user-token, X-Key, x-device-token, x-device-id
+access-control-max-age: 600
+strict-transport-security: max-age=15724800; includeSubDomains
+
+{"err":null,"msg":"Gate opened: true","status":"ok","confirmed":true}
+
+
+
+###
+GET https://api1.pal-es.com/v1/bt/user/check-token HTTP/2.0
+x-bt-token: 0100126E933AB56AF3422B951F68D17BED69454F0F907D
+accept-encoding: gzip
+user-agent: okhttp/5.0.0-alpha.2
+
+###
+GET https://api1.pal-es.com/v1/bt/user/checkupdate?v=4 HTTP/2.0
+x-bt-token: 0100126E933AB526C36D8604D4BD1F6CD69CD4544765FC
+accept-encoding: gzip
+user-agent: okhttp/5.0.0-alpha.2
+
+###
+HTTP/2.0 200
+date: Sun, 17 Jul 2022 17:21:24 GMT
+content-type: application/json; charset=utf-8
+content-length: 86
+access-control-allow-origin: *
+access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, X-Access-Token, x-bt-app-token, x-bt-user-token, X-Key, x-device-token, x-device-id
+access-control-max-age: 600
+strict-transport-security: max-age=15724800; includeSubDomains
+
+{"data":[],"err":null,"msg":"no updates exist","status":"ok","devicesHash":"2a933856"}
+
+###
+HTTP/2.0 200
+date: Sun, 17 Jul 2022 17:21:25 GMT
+content-type: application/json; charset=utf-8
+content-length: 62
+access-control-allow-origin: *
+access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, X-Access-Token, x-bt-app-token, x-bt-user-token, X-Key, x-device-token, x-device-id
+access-control-max-age: 600
+strict-transport-security: max-age=15724800; includeSubDomains
+
+{"err":null,"msg":"token valid","status":"ok","ts":1658078485}
+
+
+
+
